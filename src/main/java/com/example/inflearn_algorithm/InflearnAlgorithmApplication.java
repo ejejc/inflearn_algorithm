@@ -1,9 +1,6 @@
 package com.example.inflearn_algorithm;
 
-import com.example.inflearn_algorithm.chapter1.Ch01_01;
-import com.example.inflearn_algorithm.chapter1.Ch01_02;
-import com.example.inflearn_algorithm.chapter1.Ch01_03;
-import com.example.inflearn_algorithm.chapter1.Ch01_04;
+import com.example.inflearn_algorithm.chapter1.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,7 +11,7 @@ public class InflearnAlgorithmApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InflearnAlgorithmApplication.class, args);
-        Ch01_04.print();
+        Ch01_05.print();
     }
 
 }
