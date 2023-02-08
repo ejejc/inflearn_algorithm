@@ -1,7 +1,5 @@
-package com.example.inflearn_algorithm.chapter1;
+package com.example.inflearn_algorithm.strings_algorithm;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Ch01_03 {

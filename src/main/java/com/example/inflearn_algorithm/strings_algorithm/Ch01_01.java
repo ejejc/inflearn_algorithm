@@ -1,6 +1,4 @@
-package com.example.inflearn_algorithm.chapter1;
-
-import org.springframework.util.StringUtils;
+package com.example.inflearn_algorithm.strings_algorithm;
 
 import java.util.Scanner;
 

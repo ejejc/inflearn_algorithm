@@ -1,6 +1,4 @@
-package com.example.inflearn_algorithm.chapter1;
-
-import com.sun.tools.javac.Main;
+package com.example.inflearn_algorithm.strings_algorithm;
 
 import java.util.ArrayList;
 import java.util.Scanner;
