@@ -10,7 +10,7 @@ public class InflearnAlgorithmApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InflearnAlgorithmApplication.class, args);
-        Ch02_09.prints();
+        Ch02_10.prints();
     }
 
 }
