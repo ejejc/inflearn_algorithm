@@ -16,6 +16,19 @@ public class Ch04_01 {
      * 15, BACBACCACCBDEDE
      * 출력:
      * C
+     * -----------------------------------------------------------------------------
+     * HashMap에 중요한 메소드
+     * - 특정 키가 있는지 확인하는 방법
+     * map.containsKey(key)
+     * - key의 개수를 알려주는 방법
+     * map.size()
+     * - 특정 key를 삭제해주는 방법
+     * map.remove(key)
+     * - 없으면 default 값으로 key를 만들어주고 있으면 해당 Key의 value값 반환
+     * map.getOrDefault()
+     * - map의 key들을 Set<> 형태로 반환
+     * map.
+     * yu
      */
     public static void prints() {
         Scanner sc = new Scanner(System.in);
