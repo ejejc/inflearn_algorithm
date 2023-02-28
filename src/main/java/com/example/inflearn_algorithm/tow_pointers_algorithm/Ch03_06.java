@@ -1,7 +1,5 @@
 package com.example.inflearn_algorithm.tow_pointers_algorithm;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Ch03_06 {
@@ -21,7 +19,7 @@ public class Ch03_06 {
         for(int i=0; i<n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(solution(n, k, arr));
+        System.out.println(solution2(n, k, arr));
     }
 
     private static int solution(int n, int k, int[] arr) {
@@ -35,5 +33,22 @@ public class Ch03_06 {
             answer = Math.max(answer, rt-lt+1);
         }
         return answer;
+    }
+
+    private static int solution2(int n, int k, int[] arr) {
+        int lt =0, rt=-1, cnt =0, max =0, answer = 0;
+        for (lt = 0; lt<n; lt++) {
+            if (arr[lt] == 0) cnt++;
+            if (cnt > k) {
+                rt++;
+                lt=rt;
+                cnt =0;
+                max = Math.max(max,answer);
+                answer = 0;
+            } else {
+                answer++;
+            }
+        }
+        return max;
     }
 }
