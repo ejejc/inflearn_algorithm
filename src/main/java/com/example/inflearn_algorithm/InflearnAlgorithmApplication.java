@@ -1,8 +1,7 @@
 package com.example.inflearn_algorithm;
 
-import com.example.inflearn_algorithm.arrays_algorithm.*;
-import com.example.inflearn_algorithm.strings_algorithm.*;
-import com.example.inflearn_algorithm.tow_pointers_algorithm.*;
+import com.example.inflearn_algorithm.hashmap_treemap_algorithm.Ch04_01;
+import com.example.inflearn_algorithm.two_pointers_algorithm.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,7 +10,7 @@ public class InflearnAlgorithmApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InflearnAlgorithmApplication.class, args);
-        Ch03_06.prints();
+        Ch04_01.prints();
     }
 
 }

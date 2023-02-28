@@ -1,4 +1,4 @@
-package com.example.inflearn_algorithm.tow_pointers_algorithm;
+package com.example.inflearn_algorithm.two_pointers_algorithm;
 
 import java.util.Scanner;
 
