@@ -45,13 +45,4 @@ public class Ch04_04 {
         }
         return cnt;
     }
-
-    private static boolean check(Map<Character, Integer> map, String str2) {
-        char[] arr = new char[str2.length()];
-        arr = str2.toCharArray();
-        for (char c : arr) {
-            if (map.get(c) == null || map.get(c) != 1) return false;
-        }
-        return true;
-    }
 }
