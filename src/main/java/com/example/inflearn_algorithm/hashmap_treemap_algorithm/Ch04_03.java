@@ -21,23 +21,20 @@ public class Ch04_03 {
     }
 
     private static List<Integer> solution(int n, int k, int[] arr) {
-        int lt = 0, rt = 0, cnt = 0;
-        int[] temp = new int[k];
+        Map<Integer, Integer> map = new HashMap<>();
+        int lt = 0;
         List<Integer> list = new ArrayList<>();
-        HashSet<Integer> hashSet = new HashSet<>();
-        while(rt < n) {
-            if (cnt == k) {
-                list.add(hashSet.size());
-                lt++;
-                rt = lt;
-                cnt = 0;
-                hashSet = new HashSet<>();
-            } else {
-                hashSet.add(arr[rt]);
-                cnt++;
-                rt++;
-
+        for (int i=0; i<k-1; i++) {
+            map.put(arr[i], map.getOrDefault(arr[i],0)+1);
+        }
+        for (int i=k-1; i<n; i++) {
+            map.put(arr[i], map.getOrDefault(arr[i], 0)+1);
+            list.add(map.size());
+            map.put(arr[lt],map.get(arr[lt]) -1);
+            if (map.get(arr[lt]) == 0) {
+                map.remove(arr[lt]);
             }
+            lt++;
         }
         return list;
     }
