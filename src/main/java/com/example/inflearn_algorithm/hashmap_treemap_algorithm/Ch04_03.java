@@ -6,6 +6,7 @@ public class Ch04_03 {
     /**
      * N일 동안의 매출 기록을 주고 연속된 K일 동안의 매출액의 종류를 각 구간별로 구해라
      * 20 12 20 10 23 17 10 > 4, 4, 3
+     * > 틀렸던 문제 / 다시 풀어보기
      */
     public static void prints() {
         Scanner sc = new Scanner(System.in);
