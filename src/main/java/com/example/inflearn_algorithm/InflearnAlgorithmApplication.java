@@ -1,6 +1,7 @@
 package com.example.inflearn_algorithm;
 
 import com.example.inflearn_algorithm.hashmap_treemap_algorithm.*;
+import com.example.inflearn_algorithm.sorting_searching_algorithm.Ch06_01;
 import com.example.inflearn_algorithm.stack_queue_algorithm.*;
 import com.example.inflearn_algorithm.two_pointers_algorithm.*;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +12,7 @@ public class InflearnAlgorithmApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InflearnAlgorithmApplication.class, args);
-        Ch05_08.prints();
+        Ch06_01.prints();
     }
 
 }
