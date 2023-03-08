@@ -11,7 +11,7 @@ public class InflearnAlgorithmApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InflearnAlgorithmApplication.class, args);
-        Ch05_06.prints();
+        Ch05_07.prints();
     }
 
 }
