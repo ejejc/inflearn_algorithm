@@ -1,7 +1,6 @@
 package com.example.inflearn_algorithm;
 
-import com.example.inflearn_algorithm.sorting_searching_algorithm.*;
-import com.example.programmers.level2.Ch01;
+import com.example.inflearn_algorithm.sorting_searching_algorithm.Ch06_10;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
