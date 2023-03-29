@@ -29,8 +29,8 @@ public class Ch06_10 {
             // 2 < 4
             if (check(mid, arr) >= m) {
                 result = mid;
-                lt = mid +1;
-            } else rt = mid -1;
+                lt = mid+1;
+            } else rt = mid-1;
         }
         return result;
     }
