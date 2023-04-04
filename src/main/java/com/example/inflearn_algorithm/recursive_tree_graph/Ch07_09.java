@@ -1,6 +1,6 @@
 package com.example.inflearn_algorithm.recursive_tree_graph;
 
-public class Ch08_09 {
+public class Ch07_09 {
     /**
      * Tree 말단노드까지의 가장 짧은 경로 - DFS
      * 이진트리에서 루트 노드에서 말단 노드까지의 길이 중 가장 짧은 길이를 구하는 프로그램을 작성하세요.

@@ -1,6 +1,6 @@
 package com.example.inflearn_algorithm.recursive_tree_graph;
 
-public class Ch08_02 {
+public class Ch07_02 {
     /**
      * 재귀함수를 이용한 이진수 출력
      * - 10진수 N이 입력되면 2진수로 반환하여 출력한느 프로그램을 작성하시오.

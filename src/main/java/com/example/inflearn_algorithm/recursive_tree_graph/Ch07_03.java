@@ -1,6 +1,6 @@
 package com.example.inflearn_algorithm.recursive_tree_graph;
 
-public class Ch08_03 {
+public class Ch07_03 {
     /**
      * 재귀 알고리즘
      * 자연수 N이 입력되면 N!를 구하는 프로그램을 작성하세요.

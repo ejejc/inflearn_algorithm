@@ -1,6 +1,6 @@
 package com.example.inflearn_algorithm.recursive_tree_graph;
 
-public class Ch08_05 {
+public class Ch07_05 {
     /**
      *  이진트리순회 - DFS 알고리즘
      *  : 전위 순회 출력

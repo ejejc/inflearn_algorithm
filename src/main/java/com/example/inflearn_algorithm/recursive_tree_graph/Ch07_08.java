@@ -2,7 +2,7 @@ package com.example.inflearn_algorithm.recursive_tree_graph;
 
 import java.util.*;
 
-public class Ch08_08 {
+public class Ch07_08 {
     /**
      * BFS 알고리즘
      * 현수는 송아지를 잃어버렸지만 다행히 위치추적기가 달려있다.

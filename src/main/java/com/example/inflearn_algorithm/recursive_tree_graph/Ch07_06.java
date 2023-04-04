@@ -1,6 +1,6 @@
 package com.example.inflearn_algorithm.recursive_tree_graph;
 
-public class Ch08_06 {
+public class Ch07_06 {
     /**
      * 부분집합 구하기 - DFS
      * - 자연수 N이 주어지면 1 ~ N 까지의 원소를 갖는 집합의 부분집합을 모두 출력하는 프로그램을 작성하세요.
@@ -29,7 +29,7 @@ public class Ch08_06 {
         }
 
         public static void main(String[] args) {
-            Ch08_06 T  = new Ch08_06();
+            Ch07_06 T  = new Ch07_06();
             n = 3;
             ch = new int[n+1];
             T.DFS(1);

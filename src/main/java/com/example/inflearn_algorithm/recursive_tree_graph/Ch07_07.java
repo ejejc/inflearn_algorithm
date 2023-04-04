@@ -3,7 +3,7 @@ package com.example.inflearn_algorithm.recursive_tree_graph;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Ch08_07 {
+public class Ch07_07 {
     /**
      * 넓이 우선 탐색 : BFS
      */

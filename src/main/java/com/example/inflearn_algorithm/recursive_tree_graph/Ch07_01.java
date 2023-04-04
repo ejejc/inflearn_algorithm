@@ -1,6 +1,6 @@
 package com.example.inflearn_algorithm.recursive_tree_graph;
 
-public class Ch08_01 {
+public class Ch07_01 {
     /**
      * 재귀함수 알고리즘 풀이 - 스택프레임 작동 방식
      */
