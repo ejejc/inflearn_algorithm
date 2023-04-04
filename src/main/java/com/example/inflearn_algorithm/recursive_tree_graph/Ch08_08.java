@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Ch08_08 {
     /**
+     * BFS 알고리즘
      * 현수는 송아지를 잃어버렸지만 다행히 위치추적기가 달려있다.
      * 현수의 위치와 송아지의 위치는 수직선 상에 잡혀 있다.
      * 한번의 점프로 앞으로 1 뒤로 1 앞으로 5로 이동할 수 있다.
@@ -44,23 +45,19 @@ public class Ch08_08 {
                         pollData.minus = new Node(pollData.data - 1);
                         pollData.plus = new Node(pollData.data + 1);
                         pollData.plusFive = new Node(pollData.data + 5);
-                        if (!set.contains(pollData.minus.data)){
-                            queue.offer(pollData.minus);
-                            set.add(pollData.minus.data);
-                        }
-                        if (!set.contains(pollData.plus.data)) {
-                            queue.offer(pollData.plus);
-                            set.add(pollData.plus.data);
-                        }
-                        if (!set.contains(pollData.plusFive.data)) {
-                            queue.offer(pollData.plusFive);
-                            set.add(pollData.plusFive.data);
-                        }
+                        if (!set.contains(pollData.minus.data)) addQueueAndSet(pollData.minus, queue, set);
+                        if (!set.contains(pollData.plus.data)) addQueueAndSet(pollData.plus, queue, set);
+                        if (!set.contains(pollData.plusFive.data)) addQueueAndSet(pollData.plusFive, queue, set);
                     }
                 }
                 L++;
             }
             return result;
+        }
+
+        private void addQueueAndSet(Node node, Queue<Node> queue, Set<Integer> set) {
+            queue.offer(node);
+            set.add(node.data);
         }
     }
 
