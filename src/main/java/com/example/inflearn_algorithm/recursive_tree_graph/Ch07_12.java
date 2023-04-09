@@ -31,7 +31,7 @@ public class Ch07_12 {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         m = sc.nextInt();
-        graph = new ArrayList<ArrayList<Integer>>();
+        graph = new ArrayList<>();
         for (int i=0; i<=n; i++) {
             graph.add(new ArrayList<Integer>());
         }
