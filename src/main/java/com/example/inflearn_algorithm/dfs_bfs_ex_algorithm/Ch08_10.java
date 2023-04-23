@@ -1,5 +1,7 @@
 package com.example.inflearn_algorithm.dfs_bfs_ex_algorithm;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Ch08_10 {
@@ -18,6 +20,16 @@ public class Ch08_10 {
     static int n;
     static int result = 0;
 
+    public static class Node {
+        int x;
+        int y;
+
+        public Node(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
@@ -34,12 +46,29 @@ public class Ch08_10 {
         for (int i=0; i<n; i++) {
             for (int j=0; j<n; j++) {
                 if (arr[i][j] == 1) {
-                    DFS(i, j);
+                    BFS(i, j);
                     result = result + 1;
                 }
             }
         }
         return result;
+    }
+
+    public static void BFS(int x, int y) {
+        // queue를 활용한 문제
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(new Node(x, y));
+        while (!queue.isEmpty()) {
+            Node popNode = queue.poll();
+            for (int i = 0; i < 8; i++) {
+                int newX = popNode.x + arrX[i];
+                int newY = popNode.y + arrY[i];
+                if (newX >= 0 && newX < n && newY >= 0 && newY < n && arr[newX][newY] == 1) {
+                    arr[newX][newY] = 0;
+                    queue.offer(new Node(newX, newY));
+                }
+            }
+        }
     }
 
     private static void DFS(int x, int y) {
